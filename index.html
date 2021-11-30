@@ -1,66 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- взяв з макету bootstrap -->
+    <!-- взято з макету bootstrap -->
+    <!-- взяв з макету bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
      crossorigin="anonymous">
+    <!-- посилання на картки, каруселі та інше з bootstrap -->
     <link rel="stylesheet" href="styles.css">
+    <!-- посилання на мої стилі -->
     <title>Персональна сторінка</title>
   </head>
-  <body>
-    <h1>Персональна сторінка</h1>
-      <!-- зробив navbar згідно прикладу з сайта -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-          <!-- Перший елемент -->
-        <a class="navbar-brand" href="#">Navbar-приклад
-        </a>
-
-        <button class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-
-          <span class="navbar-toggler-icon">
-          </span>
-        </button>
-
+<body>
+<!-- зробив navbar згідно прикладу з сайта -->
+<h1>Персональна сторінка</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- тип з сайту bootstrap -->
+    <div class="container-fluid">
+        <!-- контейнер для елементів -->
+        <a class="navbar-brand" href="#">Navbar-приклад</a>
+          <!-- Перший елемент-посилання -->
+          <!-- відповідає за стиль навігаціоної панелі -->
         <div class="collapse navbar-collapse" id="navbarScroll">
+          <!-- приклад взяв з bootstrap -->
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <!-- тег ul додає нові кнопки до панелі -->
             <li class="nav-item">
-              <!-- Перше посилання -->
-              <a class="nav-link active" aria-current="page" href="#">Головна сторінка</a>
+              <a class="nav-link active" href="storinka2.html">Друга сторінка</a>
+                <!-- Перше посилання, буде працювати, на 2 сторінку-->
             </li>
             <li class="nav-item">
-              <!-- Друге посилання -->
               <a class="nav-link" href="#">посилання</a>
+                <!-- Друге посилання, але без посилання -->
             </li>
-
             <li class="nav-item">
-              <!-- Третє посилання -->
+              <!-- Третє посилання, вимкнене -->
               <a class="nav-link disabled">посилання</a>
             </li>
           </ul>
+          <!-- Початок видвижного списку -->
           <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
-             role="button"
-              data-bs-toggle="dropdown"
-               aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false">
+               <!-- Задали стиль -->
               Список
             </a>
               <!-- Список варіантів -->
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <!-- натиск на список виводить наступне -->
               <li><a class="dropdown-item" href="#">варіант 1</a></li>
               <li><a class="dropdown-item" href="#">Варіант 2</a></li>
               <li><hr class="dropdown-divider"></li>
+              <!-- полоска між варіантами списку -->
               <li><a class="dropdown-item" href="#">Варіант 3</a></li>
             </ul>
           </div>
@@ -68,29 +60,21 @@
       </div>
     </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous">
-    </script>
-
-
-
 <!-- Зробив картку згідно до прикладу з сайта-->
 
-<div class="card" style="width: 18rem; float: left;;">
-
+<div class="card" style="width: 18rem; float: left;">
+  <!-- макет картки -->
 <img class="card-img-top" src="123.jpg" alt="Card image cap">
-
+<!-- картинка -->
 <div class="card-body">
-
-  <h5 class="card-title">Card title</h5>
-
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-
+  <!-- тип картки -->
+  <h5 class="card-title">Райан Гослінг</h5>
+  <!-- назва картки -->
+  <p class="card-text">Це актор</p>
+    <!-- текст під карткою -->
+ </div>
 </div>
-
-</div>
+<!-- текст -->
 <p>
 text text text text text text text text text text text text text text text text
 text text text text text text text text text text text text text text text text
@@ -106,55 +90,58 @@ text text text text text text text text text text text text text text text text
 text text text text text text text text text text text text text text text text
 text text text text text text text text text text text text text text text text
 text text text text text text text text text text text text text text text text
-
 </p>
-
-
 <!-- Зробив карусель картинок -->
-    <div id="carouselExampleControlsNoTouching"
-     class="carousel slide"
-     data-bs-touch="false"
-      data-bs-interval="false">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+      <!-- початок -->
      <div class="carousel-inner">
       <div class="carousel-item active">
         <!-- Перша картинка -->
         <div class="d-flex justify-content-center">
+            <!-- вирівнювання картинки -->
         <img src="111.jpg" class="d-block w-5" alt="..." height="600">
        </div>
       </div>
       <div class="carousel-item">
         <!-- Друга картинка -->
         <div class="d-flex justify-content-center">
+          <!-- вирівнювання картинки -->
         <img src="112.jpg" class="d-block w-5" alt="..." height="600">
       </div>
       </div>
       <div class="carousel-item">
         <!-- Третя картинка -->
         <div class="d-flex justify-content-center">
+            <!-- вирівнювання картинки -->
         <img src="113.jpg" class="d-block w-5" alt="..." height="600">
       </div>
       </div>
     </div>
-<div class="text-center">
-  <!-- Кнопка попердньої картинки -->
+    <div class="text-center">
+    <!-- Кнопка попердньої картинки -->
     <button class="carousel-control-prev"
-     type="button"
-      data-bs-target="#carouselExampleControlsNoTouching"
-       data-bs-slide="prev">
+     type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+       <!-- тип кнопки -->
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!-- відображення кнопки -->
       <span class="sr-only">Попереднє</span>
+      <!-- Назва кнопки -->
     </button>
-     </div>
-<div class="text-center">
-  <!-- Кнопка наступної картинки-->
-    <button class="carousel-control-next"
-     type="button"
-      data-bs-target="#carouselExampleControlsNoTouching"
-       data-bs-slide="next">
+    </div>
+    <div class="text-center">
+    <!-- Кнопка наступної картинки-->
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+       <!-- тип кнопки -->
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <!-- відображення кнопки -->
       <span class="sr-only">Наступне</span>
+      <!-- Назва кнопки -->
     </button>
     </div>
   </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+      <!-- скрипт, який відповідає за видвигання списку, йде з макетом bootstrap -->
   </body>
 </html>
