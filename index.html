@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- взяв з макету bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+     crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Персональна сторінка</title>
+  </head>
+  <body>
+    <h1>Персональна сторінка</h1>
+      <!-- зробив navbar згідно прикладу з сайта -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <!-- Перший елемент -->
+        <a class="navbar-brand" href="#">Navbar-приклад
+        </a>
+
+        <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <!-- Перше посилання -->
+              <a class="nav-link active" aria-current="page" href="#">Головна сторінка</a>
+            </li>
+            <li class="nav-item">
+              <!-- Друге посилання -->
+              <a class="nav-link" href="#">посилання</a>
+            </li>
+
+            <li class="nav-item">
+              <!-- Третє посилання -->
+              <a class="nav-link disabled">посилання</a>
+            </li>
+          </ul>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+             role="button"
+              data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Список
+            </a>
+              <!-- Список варіантів -->
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">варіант 1</a></li>
+              <li><a class="dropdown-item" href="#">Варіант 2</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Варіант 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous">
+    </script>
+
+
+
+<!-- Зробив картку згідно до прикладу з сайта-->
+
+<div class="card" style="width: 18rem; float: left;;">
+
+<img class="card-img-top" src="123.jpg" alt="Card image cap">
+
+<div class="card-body">
+
+  <h5 class="card-title">Card title</h5>
+
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+</div>
+
+</div>
+<p>
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text text text
+
+</p>
+
+
+<!-- Зробив карусель картинок -->
+    <div id="carouselExampleControlsNoTouching"
+     class="carousel slide"
+     data-bs-touch="false"
+      data-bs-interval="false">
+     <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- Перша картинка -->
+        <div class="d-flex justify-content-center">
+        <img src="111.jpg" class="d-block w-5" alt="..." height="600">
+       </div>
+      </div>
+      <div class="carousel-item">
+        <!-- Друга картинка -->
+        <div class="d-flex justify-content-center">
+        <img src="112.jpg" class="d-block w-5" alt="..." height="600">
+      </div>
+      </div>
+      <div class="carousel-item">
+        <!-- Третя картинка -->
+        <div class="d-flex justify-content-center">
+        <img src="113.jpg" class="d-block w-5" alt="..." height="600">
+      </div>
+      </div>
+    </div>
+<div class="text-center">
+  <!-- Кнопка попердньої картинки -->
+    <button class="carousel-control-prev"
+     type="button"
+      data-bs-target="#carouselExampleControlsNoTouching"
+       data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Попереднє</span>
+    </button>
+     </div>
+<div class="text-center">
+  <!-- Кнопка наступної картинки-->
+    <button class="carousel-control-next"
+     type="button"
+      data-bs-target="#carouselExampleControlsNoTouching"
+       data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Наступне</span>
+    </button>
+    </div>
+  </div>
+  </body>
+</html>
